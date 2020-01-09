@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 const trace = require("../../helpers/trace");
 const date = require("../../helpers/date");
 
-router.get("/getUF", async function(req, res) {
+router.get("/getUF", async (req, res)=> {
   trace.trackEvent(`Request a /api/getUF correcta.`);
   const request = await fetch(api.uriConfig.api.getUF(date.fechaNow()), {
     method: "GET",

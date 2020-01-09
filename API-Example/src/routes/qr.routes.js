@@ -3,7 +3,7 @@ const router = express.Router();
 
 const QR = require("../../helpers/qrGenerator");
 
-router.get("/", function(req, res) {
+router.get("/", (req, res)=> {
   res.status(200).send(QR.generateQR());
 });
 module.exports = router;

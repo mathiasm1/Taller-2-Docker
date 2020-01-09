@@ -193,7 +193,7 @@ function NumeroALetras(num) {
     );
 } //NumeroALetras()
 
-console.log(NumeroALetras(3333));
+
 
 module.exports = {
   NumeroALetras
